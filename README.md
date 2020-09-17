@@ -27,3 +27,7 @@ ls /home/
 
 useradd -m -s /bin/bash user_name
 
+mkdir public_html
+
+echo user_name > ./public_html/index.html
+
