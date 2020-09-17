@@ -18,5 +18,12 @@ service --status-all
 https://docs.docker.com/engine/security/rootless/
 
 a2ensuite 
+
 ls /etc/apache2/mods-enabled/
+
 service apache2 restart
+
+ls /home/
+
+useradd -m -s /bin/bash user_name
+
