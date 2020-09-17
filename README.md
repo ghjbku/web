@@ -1,5 +1,5 @@
 2. óra
-docker run -it(interaktiv terminalt ad) -p 8080:80 ubuntu(megnyitja számára ezt a portot)
+docker run -it -p 8080:80 ubuntu(megnyitja számára ezt a portot)
 
 view etc/group
 
@@ -11,7 +11,12 @@ apt-cache search php
 
 apt-get install -y php
 
-service apach2 start
+service apache2 start
 
 service --status-all
 
+https://docs.docker.com/engine/security/rootless/
+
+a2ensuite 
+ls /etc/apache2/mods-enabled/
+service apache2 restart
