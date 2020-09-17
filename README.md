@@ -10,3 +10,8 @@ apt-get update – frissíti az apt csomag indexeit
 apt-cache search php
 
 apt-get install -y php
+
+service apach2 start
+
+service --status-all
+
