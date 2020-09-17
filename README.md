@@ -1,4 +1,7 @@
 2. óra
+
+git shortlog |grep -v ^\s | grep "^\w"
+
 docker run -it -p 8080:80 ubuntu(megnyitja számára ezt a portot)
 
 view etc/group
