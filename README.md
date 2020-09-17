@@ -31,3 +31,6 @@ mkdir public_html
 
 echo user_name > ./public_html/index.html
 
+su user_name
+
+kell xampp is (root gecvi)
