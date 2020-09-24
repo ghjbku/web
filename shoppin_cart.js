@@ -30,7 +30,7 @@ function calc_all_cost(variable,index) {
 }
 shopping_cart.forEach(calc_all_cost);
 avg_cost = total_cost/ shopping_cart.length;
-console.log(total_cost+"\n"+avg_cost);
+console.log("total cost:"+total_cost+"\navg:"+avg_cost);
 
 let max = 0;
 function find_unit(val,index){
@@ -38,7 +38,7 @@ function find_unit(val,index){
     max = val.price_per_unit;
     }
     if (index === shopping_cart.length-1){
-    console.log(max);
+    console.log("maximum/unit price: "+val.product+max);
     }
 }
 let most_total = 0;
@@ -49,7 +49,7 @@ function find_most_total(val,index){
     if (helper > most_total){
             most_total = helper;
             if (index === shopping_cart.length-1){
-                console.log(val.product+" "+most_total);
+                console.log("max of total:"+val.product+" "+most_total);
                 }
     }
 }
