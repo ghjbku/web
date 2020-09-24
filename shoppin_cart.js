@@ -38,7 +38,7 @@ function find_unit(val,index){
     max = val.price_per_unit;
     }
     if (index === shopping_cart.length-1){
-    console.log("maximum/unit price: "+val.product+max);
+    console.log("maximum/unit price: "+val.product+" "+max);
     }
 }
 let most_total = 0;
