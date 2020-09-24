@@ -20,9 +20,6 @@ let shopping_cart = [{
     quantity: 100,
     price_per_unit: 6  
 }];
-
-console.log("full cost:???\nAvg cost per product:???\nMost expensive prod(unit price):???\nMost expensive prod(total):???");
-
 function find_product(variable,property,value){
     if (property === "most_total")
     {
@@ -34,7 +31,6 @@ function find_product(variable,property,value){
 }
 total_cost = 0;
 function calc_all_cost(variable,index) {
-    console.log(index+": "+variable.quantity*variable.price_per_unit);
 		total_cost = total_cost + (variable.quantity*variable.price_per_unit);
 }
 shopping_cart.forEach(calc_all_cost);
