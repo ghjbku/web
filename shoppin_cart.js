@@ -38,13 +38,13 @@ avg_cost = total_cost/ shopping_cart.length;
 console.log("total cost:"+total_cost+"\navg:"+avg_cost);
 
 let max = 0;
-function find_unit(val,index){
+function find_unit(val){
     if (val.price_per_unit > max){
     max = val.price_per_unit;
     }
 }
 let most_total = 0;
-function find_most_total(val,index){
+function find_most_total(val){
 
     helper = (val.quantity*val.price_per_unit);
 
