@@ -23,6 +23,15 @@ let shopping_cart = [{
 
 console.log("full cost:???\nAvg cost per product:???\nMost expensive prod(unit price):???\nMost expensive prod(total):???");
 
+function find_product(variable,property,value){
+    if (property === "most_total")
+    {
+        return variable.quantity*variable.price_per_unit === value;
+    }
+    else if (property ==="price_per_unit"){
+    return variable.price_per_unit === value;
+    }
+}
 total_cost = 0;
 function calc_all_cost(variable,index) {
     console.log(index+": "+variable.quantity*variable.price_per_unit);
@@ -53,6 +62,8 @@ function find_most_total(val,index){
                 }
     }
 }
-
 shopping_cart.forEach(find_unit);
 shopping_cart.forEach(find_most_total);
+
+console.log("maxprice per unit:"+shopping_cart[shopping_cart.findIndex(val=> find_product(val,"price_per_unit",max))].product);
+console.log("maxprice total:"+shopping_cart[shopping_cart.findIndex(val=> find_product(val,"most_total",most_total))].product);
