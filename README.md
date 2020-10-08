@@ -45,6 +45,6 @@ docker run -it --name athena ubuntu
 docker run -it --name artemis ubuntu
 
 apt-get update
-apt-get install -y vim curl net-tools
+apt-get install -y vim curl net-tools iputils-ping
 cat /etc/hosts
 ```
