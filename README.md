@@ -46,4 +46,5 @@ docker run -it --name artemis ubuntu
 
 apt-get update
 apt-get install -y vim curl net-tools
+cat /etc/hosts
 ```
