@@ -71,7 +71,8 @@ select user() from dual;
 
 vi /etc/mysql/mysql.conf.d/mysqld.cnf
 
-bind-address keresése
+bind-address keresése:
+/bind 
 i betű
 esc
 :w
