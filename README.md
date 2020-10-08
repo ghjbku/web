@@ -61,10 +61,26 @@ service --status-all
 service mysql start
 service mysql restart
 mysql
+create database wordpress;
+show databases
+create user alice identified by 'secret';
+grant all on wordpress .* to 'alice'@'%';
+
+mysql -u alice -psecret;
+select user() from dual;
+
+vi /etc/mysql/mysql.conf.d/mysqld.cnf
+
+bind-address keresése
+i betű
+esc
+:w
+:q!
+service mysql restart
 
 --artemis
 service apache2 start
 service apache2 restart
 
-
+mysql -u alice -psecret -h 172.17.0.3
 ```
