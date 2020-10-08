@@ -40,7 +40,7 @@ kell xampp is (root gecvi)
 
 # 5.óra
 
-```cmd
+```bash
 docker run -it --name athena ubuntu
 docker run -it --name artemis ubuntu
 
