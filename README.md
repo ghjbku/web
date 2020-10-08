@@ -1,4 +1,4 @@
-2. óra
+# 2. óra
 
 git shortlog |grep -v ^\s | grep "^\w"
 
@@ -37,3 +37,13 @@ echo user_name > ./public_html/index.html
 su user_name
 
 kell xampp is (root gecvi)
+
+# 5.óra
+
+```cmd
+docker run -it --name athena ubuntu
+docker run -it --name artemis ubuntu
+
+apt-get update
+apt-get install -y vim curl net-tools
+```
