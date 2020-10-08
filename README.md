@@ -51,5 +51,20 @@ cat /etc/hosts
 ping 172.0.0.3        //ping the ip address
 
 apt-cache search mysql
+--athena
 apt-get install mysql-client mysql-server
+--artemis
+apt-get install apache2 php php-mysql mysql-client
+
+--athena
+service --status-all
+service mysql start
+service mysql restart
+mysql
+
+--artemis
+service apache2 start
+service apache2 restart
+
+
 ```
