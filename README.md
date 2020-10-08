@@ -50,5 +50,6 @@ apt-get install -y vim curl net-tools iputils-ping
 cat /etc/hosts
 ping 172.0.0.3        //ping the ip address
 
-
+apt-cache search mysql
+apt-get install mysql-client mysql-server
 ```
