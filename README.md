@@ -83,4 +83,5 @@ service apache2 start
 service apache2 restart
 
 mysql -u alice -psecret -h 172.17.0.3
+select user() from dual;
 ```
