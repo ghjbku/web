@@ -47,4 +47,6 @@ docker run -it --name artemis ubuntu
 apt-get update
 apt-get install -y vim curl net-tools iputils-ping
 cat /etc/hosts
+
+ping 172.0.0.3        //ping the ip address
 ```
