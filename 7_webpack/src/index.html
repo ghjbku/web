@@ -21,7 +21,8 @@
                         name:document.forms[0].elements[0].value,
                         age:document.forms[0].elements[1].value
                     },
-                    ()=>console.log('success'),
+                    ()=>{console.log('success');
+                        document.forms[0].elements[1].style.color='green';},
                     ()=>{console.log('fail');
                         document.forms[0].elements[1].style.color='red';}
                     );
