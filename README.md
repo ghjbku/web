@@ -87,3 +87,5 @@ mysql -u alice -psecret -h 172.17.0.3
 select user() from dual;
 
 ```
+
+![pic](https://i.imgur.com/PJJFzXk.png)
